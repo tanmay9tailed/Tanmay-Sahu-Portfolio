@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: black;
+  color: white;
+}
+
+/* nav */
+.crsr {
+  height: 12px;
+  width: 12px;
+  background-color: rgb(17, 0, 255);
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(1px);
+  z-index: 100;
+  pointer-events: none;
+  border: none;
+  transition: transform 0.4s, border 0, background-color 0s;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.crsr.hovering {
+  background-color: transparent;
+  height: 80px;
+  width: 80px;
+  transform: translate(-50%, -50%) scale(1); /* Adjust the scale value as per your requirement */
+  border: 1px solid white;
+  transition: transform 0.4s, height 0.4s, width 0.4s, border 0.4s, background-color 0.4s;
+}
+
+.udr-line::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  right: 0%;
+  bottom: -5px;
+  background-color: rgb(17, 0, 255);
+  transform: scale(0, 0);
+  transition: all 0.5s ease;
+}
+.udr-line:hover::after {
+  transform: scale(1, 1);
+}
+
+/* dragger */
+.slider {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.142);
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.641);
+  bottom: 20%;
+  right: 30%;
+  border-radius: 50px;
+}
+.dragme {
+  margin-top: 10px;
+  height: 80px;
+  width: 80px;
+  background-color: transparent;
+  background-color: rgba(255, 128, 0, 0.041);
+  box-shadow: inset 2px 2px 8px rgba(255, 128, 0, 0.141),
+    inset -2px -2px 8px rgba(255, 128, 0, 0.141);
+  /* border: 3px dotted orange; */
+  border-radius: 50%;
+  position: relative;
+}
+.on {
+  position: relative;
+  margin-top: 10px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: transparent;
+  /* border: 3px dotted orange; */
+}
+.rotate {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border: 2px dotted white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotation 20s infinite linear;
+}
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.orange {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  width: 20px;
+  background-color: rgba(255, 68, 0, 0.66);
+  border-radius: 50%;
+}
+.on-text {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  opacity: 0.2;
+  font-size: 20px;
+}
+
+/* about */
+.love {
+  color: rgb(254, 74, 104);
+}
+
+
+.image-hover {
+  width: 90%;
+  /* border: 5px solid rgba(255, 255, 255, 0); */
+  position: relative;
+  border-radius: 50%;
+  /* background-color: aqua; */
+  overflow: hidden;
+}
+.right-cd1 .my-image {
+  width: 97%;
+  border-radius: 50%;
+  margin: 0% 0%;
+  border: 4px solid white;
+  transition: filter 1s ease;
+  /* transition-delay: 0.5s; */
+  /* box-shadow: 5px 5px 25px rgba(255, 255, 0, 0.274),-5px -5px 25px rgba(255, 255, 0, 0.274), -5px 5px 25px rgba(255, 255, 0, 0.274),5px -5px 25px rgba(255, 255, 0, 0.274); */
+}
+.right-cd1 .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: translateY(-100vh);
+  z-index: 100;
+  width: 98%;
+  /* height: 100%; */
+  background-color: rgba(0, 0, 0, 0.501);
+  border: 4px solid rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0; */
+  transition: all 1s ease;
+  /* filter: blur(2px); */
+}
+.right-cd1 .overlay h1 img {
+  width: 20px;
+  margin: 2px 3px;
+  border-radius: 5px;
+}
+.right-cd1 .overlay a img {
+  width: 20px;
+  margin: 2px 3px;
+}
+.right-cd1 .overlay a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.right-cd1 :hover .overlay {
+  /* opacity: 1; */
+  transform: translateY(0);
+}
+.right-cd1 :hover .my-image {
+  filter: blur(3px);
+}
+.good {
+  color: #51cde7;
+}
+.dev-box img,
+.dis-box img {
+  height: 4vmax;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  background-color: #fff;
+  padding: 5px;
+  position: relative;
+  border-radius: 8px;
+}
+.dev-box,
+.dis-box {
+}
+.dev-box h4,
+.dis-box h4 {
+  border-bottom: 2px solid white;
+  padding-bottom: 1vh;
+  margin: 2vh 0vw;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -30%; /* Position the tooltip above the image */
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-container:hover .hover-text {
+  visibility: visible;
+  opacity: 1;
+}
