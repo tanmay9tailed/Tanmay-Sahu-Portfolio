@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Intro from "./pages/Intro";
 import String from "./components/String";
 import ThingsIntrestedIn from "./components/ThingsIntrestedIn";
+import MyProjects from "./components/MyProjects";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -31,7 +32,9 @@ export default function App() {
       <String />
       <About />
       <ThingsIntrestedIn />
-      <Projects />
+      <MyProjects />
+      {/* <Projects /> */}
+      <String />
       <Contact />
     </main>
   );

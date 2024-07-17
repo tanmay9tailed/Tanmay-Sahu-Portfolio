@@ -18,7 +18,9 @@ const About = () => {
       scrollTrigger: {
         trigger: container.current,
         start: "top 70%",
-        end: "top 60%",
+        end: "top 20%",
+        // markers:true,
+        scrub: 1,
       },
     });
     t4.from("#about", {

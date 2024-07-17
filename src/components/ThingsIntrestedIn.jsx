@@ -28,8 +28,10 @@ const ThingsIntrestedIn = () => {
     var c2 = gsap.timeline({
       scrollTrigger: {
         trigger: container.current,
-        start: "0% 50%",
-        end: "70% 50%",
+        start: "0% 70%",
+        end: "95% 63%",
+        // markers: true,
+        scrub: 1
       },
     });
     c2.from(".things", {
@@ -41,11 +43,12 @@ const ThingsIntrestedIn = () => {
       duration: 1,
       opacity: 0,
     },)
-    .from(".dev-box img , .dis-box img",{
+    .from(".dev-box img , .dis-box img, .dev-box h4 , .dis-box h4",{
       y: 100,
       opacity: 0,
       scale: 0,
       stagger: 0.15,
+      transformOrigin: "left bottom",
     }) 
   },
   { scope: container }
