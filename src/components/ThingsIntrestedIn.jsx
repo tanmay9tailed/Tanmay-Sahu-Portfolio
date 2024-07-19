@@ -55,80 +55,80 @@ const ThingsIntrestedIn = () => {
 );
 
   return (
-    <div ref={container} className="px-36">
-      <h1 className="things text-7xl font-rajdhani font-semibold">
+    <div ref={container} className="px-8 pt-10 sm:mt-0 sm:px-36 bg-black">
+      <h1 className="things text-5xl sm:text-7xl font-rajdhani font-semibold">
         Things I'm <span className="good">good</span> at
       </h1>
       <h2 className="things text-3xl font-rajdhani font-medium">
         skills, interests, passion and hobbies
       </h2>
-      <div className="dev-box px-16 pt-20">
-        <h4 className="text-5xl">DEVELOPMENT</h4>
+      <div className="dev-box pl-4 sm:px-16 pt-4 sm:pt-20">
+        <h4 className="text-2xl sm:text-5xl">DEVELOPMENT</h4>
         <div className="flex flex-wrap">
           <div className="image-container hover:scale-150 drop-shadow-xl shadow-black hover:z-50 transition">
             <img src={java} alt="" />
-            <span className="hover-text">Java</span>
+            <span className="hover-text scale-50 sm:scale-100">Java</span>
           </div>
           <div className="image-container hover:scale-150 drop-shadow-xl shadow-black hover:z-50 transition">
             <img src={html} alt="" />
-            <span className="hover-text">HTML</span>
+            <span className="hover-text scale-50 sm:scale-100">HTML</span>
           </div>
           <div className="image-container hover:scale-150 drop-shadow-xl shadow-black hover:z-50 transition">
             <img src={css} alt="" />
-            <span className="hover-text">CSS</span>
+            <span className="hover-text scale-50 sm:scale-100">CSS</span>
           </div>
           <div className="image-container hover:scale-150 drop-shadow-xl shadow-black hover:z-50 transition">
             <img src={js} alt="" />
-            <span className="hover-text">JavaScript</span>
+            <span className="hover-text scale-50 sm:scale-100">JavaScript</span>
           </div>
           <div className="image-container hover:scale-150 drop-shadow-xl shadow-black hover:z-50 transition">
             <img src={bootstrap} alt="" />
-            <span className="hover-text">Bootstrap</span>
+            <span className="hover-text scale-50 sm:scale-100">Bootstrap</span>
           </div>
           <div className="image-container hover:scale-150 drop-shadow-xl shadow-black hover:z-50 transition">
             <img src={git} alt="" />
-            <span className="hover-text">GitHub</span>
+            <span className="hover-text scale-50 sm:scale-100">GitHub</span>
           </div>
           <div className="image-container hover:scale-150 drop-shadow-xl shadow-black hover:z-50 transition">
             <img src={node} alt="" />
-            <span className="hover-text">Node.js</span>
+            <span className="hover-text scale-50 sm:scale-100">Node.js</span>
           </div>
           <div className="image-container hover:scale-150 drop-shadow-xl shadow-black hover:z-50 transition">
             <img src={express} alt="" />
-            <span className="hover-text">Express</span>
+            <span className="hover-text scale-50 sm:scale-100">Express</span>
           </div>
           <div className="image-container hover:scale-150 drop-shadow-xl shadow-black hover:z-50 transition">
             <img src={mongo} alt="" />
-            <span className="hover-text">MongoDB</span>
+            <span className="hover-text scale-50 sm:scale-100">MongoDB</span>
           </div>
           <div className="image-container hover:scale-150 drop-shadow-xl shadow-black hover:z-50 transition">
             <img src={gsapImg} alt="" />
-            <span className="hover-text">GSAP</span>
+            <span className="hover-text scale-50 sm:scale-100">GSAP</span>
           </div>
           <div className="image-container hover:scale-150 drop-shadow-xl shadow-black hover:z-50 transition">
             <img src={react} alt="" />
-            <span className="hover-text">React</span>
+            <span className="hover-text scale-50 sm:scale-100">React</span>
           </div>
           <div className="image-container hover:scale-150 drop-shadow-xl shadow-black hover:z-50 transition">
             <img src={next} alt="" />
-            <span className="hover-text">Next.js</span>
+            <span className="hover-text scale-50 sm:scale-100">Next.js</span>
           </div>
         </div>
       </div>
-      <div className="dis-box px-16 pt-20">
-        <h4 className="text-4xl">DESIGN</h4>
+      <div className="dis-box  pl-4 sm:px-16 pt-4 sm:pt-20">
+        <h4 className="text-2xl sm:text-5xl">DESIGN</h4>
         <div className="flex">
           <div className="image-container hover:scale-150 drop-shadow-xl shadow-black hover:z-50 transition">
             <img src={lightroom} alt="" />
-            <span className="hover-text">Lightroom</span>
+            <span className="hover-text scale-50 sm:scale-100">Lightroom</span>
           </div>
           <div className="image-container hover:scale-150 drop-shadow-xl shadow-black hover:z-50 transition">
             <img src={ps} alt="" />
-            <span className="hover-text">Photoshop</span>
+            <span className="hover-text scale-50 sm:scale-100">Photoshop</span>
           </div>
           <div className="image-container hover:scale-150 drop-shadow-xl shadow-black hover:z-50 transition">
             <img src={figma} alt="" />
-            <span className="hover-text">Figma</span>
+            <span className="hover-text scale-50 sm:scale-100">Figma</span>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 body{
-  background-color: black;
+  background-color: white;
   color: white;
   /* cursor: none; */
 }
@@ -242,6 +242,7 @@ body{
 
 .work-bottom {
   height: 50vh;
+  width: 100%;
   overflow-y: auto;
 }
 
@@ -317,9 +318,9 @@ body{
 .work-bottom .parallax-box {
   display: inline-block;
   position: relative;
-  width: 24vw;
+  width: 30%;
   height: 80%;
-  margin: 3% 2.5%;
+  margin: 3% 1.6%;
   transform-style: preserve-3d;
 }
 .work-bottom .parallax-box p {
@@ -344,23 +345,20 @@ body{
   transform: translateX(-50%) translateZ(100px) scaleY(1);
 }
 
-#contact {
+/* #contact {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 50px;
-}
+} */
 #contact h1 {
+  padding-top:100px;
   margin: 0 7vh;
-  font: 700 8vmax "Rajdhani";
+  font: 700 10vmax "Rajdhani";
   font-weight: 600;
 }
 #contact h4 {
-  position: absolute;
-  bottom: 3%;
-  left: 50%;
-  transform: translateX(-50%);
   margin: 0;
   font-size: 1.5vw;
   color: rgb(126, 126, 126);
@@ -387,4 +385,35 @@ body{
 }
 .contact-link:hover{
 text-decoration: line-through;
+}
+
+@media only screen and (max-width: 600px) {
+  .slider {
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.6);
+  }
+  .work-bottom {
+    height: 40vh;
+  }
+  #contact h1 {
+    padding-top:50px;
+    margin: 0 3vh;
+    font: 700 10vmax "Rajdhani";
+    font-weight: 600;
+  }
+  #contact h4 {
+    margin: 0;
+    font-size: 6vw;
+    color: rgb(126, 126, 126);
+    text-align: center;
+    font-weight: 300;
+  }
+  #contact sup {
+    margin: 0;
+    color: rgb(126, 126, 126);
+    text-align: center;
+    font-weight: 500;
+  }
+  
 }

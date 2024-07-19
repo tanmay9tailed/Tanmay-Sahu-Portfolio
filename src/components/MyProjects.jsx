@@ -8,12 +8,12 @@ import calc from "../assets/gif/calculator.gif";
 
 const MyProjects = () => {
   return (
-    <div className="bg-black min-h-screen px-36 pt-60">
+    <div className="bg-black sm:h-screen px-8 pt-10 sm:px-36 sm:pt-60">
       <div className="work-top">
-        <h1 className="font-rajdhani text-5xl font-medium capitalize">
+        <h1 className="font-rajdhani text-2xl sm:text-5xl font-medium capitalize">
           crafted with <span className="love">LOVE</span> ❤️
         </h1>
-        <h2 className="font-rajdhani text-7xl font-semibold">few of my Works</h2>
+        <h2 className="font-rajdhani text-4xl sm:text-7xl font-semibold">few of my Works</h2>
       </div>
       <div className="work-bottom">
         <a className="parallax-box" target="_blank" href="https://tanmay9tailed.github.io/Car-Crash-Game/">

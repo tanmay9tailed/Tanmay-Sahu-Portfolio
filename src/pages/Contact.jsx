@@ -43,15 +43,13 @@ const Contact = () => {
           <a
             target="_blank"
             href="https://www.linkedin.com/in/tanmay-sahu-50296b289/"
-            className="contact-link"
+            className="contact-link inline-block"
             id="linked"
           >
             linkedIn
           </a>
           .
         </h1>
-        <br />
-        <br />
         <h4>
           NAME:TANMAY SAHU <br />
           Created 2023<sup>&copy;</sup>

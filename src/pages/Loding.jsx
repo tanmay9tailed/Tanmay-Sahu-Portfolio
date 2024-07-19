@@ -8,7 +8,8 @@ const Loading = () => {
   const circle1 = useRef();
   const circle2 = useRef();
   const circle3 = useRef();
-
+  const windowWidth = window.innerWidth;
+  
   useGSAP(() => {
     var t2 = gsap.timeline();
     t2.from(".loading span", {
@@ -21,7 +22,7 @@ const Loading = () => {
     .to(".loading #middle",{
       delay: 0.5,
       duration: 4,
-      x: 3900,
+      x: windowWidth>600?3900:1500,
       scale: 300
     });
   })
@@ -44,7 +45,7 @@ const Loading = () => {
 
   return (
     <div ref={container} className="h-screen w-full bg-white text-black relative overflow-hidden">
-      <div className="loading h-full w-full absolute z-[100] flex items-center justify-center text-9xl font-rubikIso scale-150 font-extrabold">
+      <div className="loading h-full w-full absolute z-[100] flex items-center justify-center sm:text-9xl text-5xl font-rubikIso scale-150 font-extrabold">
         <span>W</span>
         <span>E</span>
         <span>L</span>

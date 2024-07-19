@@ -26,7 +26,7 @@ export default function App() {
 
   return (
     <main>
-      <Navbar />
+      {/* <Navbar /> */}
       <Home />
       <Intro />
       <String />

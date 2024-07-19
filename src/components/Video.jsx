@@ -48,7 +48,7 @@ const Video = () => {
       <video id="video1" className="h-screen w-screen object-cover absolute" src={video1} autoPlay muted loop></video>
       <video id="video2" className={`h-screen w-screen object-cover absolute`} src={video2} autoPlay muted loop></video>
       <div className="slider sm:right-[10%] ">
-        <div className="dragme big-circle ">
+        <div className="dragme big-circle  ">
           <div className="rotate"></div>
         </div>
         <h3 className="on-text">Drag Me -&gt;</h3>

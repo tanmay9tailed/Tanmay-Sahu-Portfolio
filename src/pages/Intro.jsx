@@ -94,18 +94,18 @@ const Intro = () => {
     <>
       <div
         ref={container}
-        className="h-screen bg-black text-white font-rubikIso relative overflow-hidden"
+        className="sm:h-screen bg-black text-white font-rubikIso relative overflow-hidden pt-32 sm:pt-0"
       >
         <div className="h-full flex flex-col items-center justify-center gap-20 font-bold">
           <div className="heading">
-            <h2 className="text-7xl text-center">NAMASTE</h2>
+            <h2 className="text-2xl sm:text-7xl text-center">NAMASTE</h2>
           </div>
-          <h1 className="text-9xl text-center">
+          <h1 className=" text-4xl sm:text-9xl text-center">
             Be Ready For
             <br />
             The Adventure
           </h1>
-          <div className="para text-center text-3xl text-slate-400 opacity-80 font-bold">
+          <div className="para text-center text-base sm:text-3xl text-slate-400 opacity-80 font-bold">
             <p>
               Created with <span className="love">LOVE</span> ❤️
               <br />

@@ -61,7 +61,7 @@ const Navbar = () => {
         <div className="left-nav ml-7">
           <a
             href="/"
-            className="big-circle text-4xl font-extrabold hover:text-blue-700 transition-all duration-500 font-rubikIso text-white"
+            className="big-circle sm:text-4xl font-extrabold hover:text-blue-700 transition-all duration-500 font-rubikIso text-white"
           >
             TANMAY
           </a>
@@ -71,7 +71,7 @@ const Navbar = () => {
             <li key={index} className="list-none">
               <a
                 href={`#${text.toLowerCase()}`}
-                className="big-circle udr-line text-white font-bold tracking-wider text-base 
+                className="big-circle udr-line text-white font-bold tracking-wider text-xs sm:text-base 
                 opacity-30 transition-all duration-300 transform hover:opacity-100"
               >
                 {text}

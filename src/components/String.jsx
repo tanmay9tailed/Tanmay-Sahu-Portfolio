@@ -72,7 +72,7 @@ const String = () => {
   const widthOfWindows = window.innerWidth;
 
   return (
-    <div ref={containerRef} className="string h-[400px]">
+    <div ref={containerRef} className="string h-[200px] sm:h-[400px] bg-black">
       <svg
         className=""
         width="100%"
@@ -81,7 +81,7 @@ const String = () => {
       >
         <path
           ref={pathRef}
-          d={`M 50 200 Q ${widthOfWindows / 2} 200 ${widthOfWindows - 50} 200`}
+          d={`M 50 ${height / 2} Q ${widthOfWindows / 2} ${height / 2} ${widthOfWindows - 50} ${height / 2}`}
           stroke="white"
           fill="transparent"
         />

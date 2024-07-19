@@ -39,14 +39,14 @@ const About = () => {
   });
 
   return (
-    <div ref={container} className="min-h-screen w-full bg-black overflow-x-hidden flex justify-between px-36">
-      <div className="w-3/5">
+    <div ref={container} className="min-h-screen w-full bg-black overflow-x-hidden sm:flex sm:justify-between px-8 sm:px-36">
+      <div className="w-full sm:w-3/5">
         <div>
-          <h1 id="about" className="text-7xl font-rajdhani text-yellow-300 font-semibold ">
+          <h1 id="about" className="text-5xl sm:text-7xl font-rajdhani text-yellow-300 font-semibold ">
             ABOUT
           </h1>
-          <div className="w-full px-16 pt-10">
-            <p id="para" className="text-xl">
+          <div className="w-full pl-4 sm:px-16 pt-2 sm:pt-10">
+            <p id="para" className="text-xs sm:text-xl">
               <span>
                 I'm Tanmay Sahu, a dedicated computer science student at ITER College with a passion for web
                 development. Hailing from a diverse background, I have a knack for crafting digital experiences that
@@ -81,7 +81,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div ref={image} className="right-cd1 w-2/6">
+      <div ref={image} className="right-cd1 pt-10 sm:pt-0 w-full sm:w-2/6 flex items-center justify-center">
         <div className="image-hover">
           <img className="my-image" src={mine} alt="" />
           <div className="overlay w-full">
