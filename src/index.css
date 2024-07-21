@@ -8,7 +8,7 @@
 body{
   background-color: black;
   color: white;
-  /* cursor: none; */
+  cursor: url('./assets/cursor.png'),auto;
 }
 
 /* nav */

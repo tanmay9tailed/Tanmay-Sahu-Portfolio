@@ -5,8 +5,6 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
 const Navbar = () => {
-  const cursor = useRef();
-  const { contextSafe } = useGSAP();
 
   // GSAP animation on component mount
   useGSAP(() => {
@@ -19,44 +17,9 @@ const Navbar = () => {
     });
   });
 
-  // Handle cursor movement with GSAP
-  const currss = contextSafe((e) => {
-    gsap.to(cursor.current, {
-      x: e.clientX,
-      y: e.clientY,
-      duration: 0.8,
-      ease: "back.out(3)",
-    });
-  });
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      currss(e);
-
-      // Handle hovering class on cursor
-      const crsr = document.querySelector(".crsr");
-      const bigcircle = document.querySelectorAll(".big-circle");
-      bigcircle.forEach((element) => {
-        element.addEventListener("mouseenter", () => {
-          crsr.classList.add("hovering");
-        });
-        element.addEventListener("mouseleave", () => {
-          crsr.classList.remove("hovering");
-        });
-      });
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, [currss]);
-  
-
   return (
     <>
-      <div ref={cursor} className="crsr fixed z-10"></div>
+      
       <nav className="fixed w-full h-14 z-50 flex justify-between items-center text-2xl pt-6">
         <div className="left-nav ml-7">
           <a

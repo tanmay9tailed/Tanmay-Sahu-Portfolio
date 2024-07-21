@@ -37,7 +37,8 @@ export default function App() {
 
   return (
     <main>
-      {isMobile ? <HamBurgerMenu /> : <Navbar />}
+      {/* {isMobile ? <HamBurgerMenu /> : <Navbar />} */}
+      <HamBurgerMenu />
       <Home />
       <Intro />
       <String />
