@@ -41,7 +41,7 @@ const String = () => {
 
     // Set up mouseover and mouseleave event listeners
     const handleMouseOver = (e) => {
-        console.log(e)
+        // console.log(e)
       const widthOfWindows = window.innerWidth;
       const path = `M 50 ${height / 2} Q ${e.clientX} ${e.clientY - 420} ${widthOfWindows - 50} ${height / 2}`;
       mouseOver(path);

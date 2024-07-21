@@ -8,7 +8,7 @@ import calc from "../assets/gif/calculator.gif";
 
 const MyProjects = () => {
   return (
-    <div className="bg-black sm:h-screen px-8 pt-10 sm:px-36 sm:pt-60">
+    <div id="projects" className="bg-black sm:h-screen px-8 pt-10 sm:px-36 sm:pt-60">
       <div className="work-top">
         <h1 className="font-rajdhani text-2xl sm:text-5xl font-medium capitalize">
           crafted with <span className="love">LOVE</span> ❤️
