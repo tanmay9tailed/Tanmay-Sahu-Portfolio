@@ -98,7 +98,7 @@ const Contact = () => {
       </div>
       <div ref={finalPageRef} className="finalPage h-screen w-full px-0 relative">
         <div className=" h-full w-full bg-white flex items-center justify-center rounded-t-3xl">
-          <h1 className="text-black sm:text-9xl text-5xl font-rubikIso scale-150 font-extrabold flex">
+          <h1 className="text-black sm:text-9xl text-4xl font-rubikIso scale-150 font-extrabold flex">
             <div>T</div>
             <div>H</div>
             <div>A</div>
@@ -109,7 +109,7 @@ const Contact = () => {
             <div>O</div>
             <div>U</div>
           </h1>
-        <button onClick={() => {window.close()}} className="h-10 w-20 bg-black absolute bottom-6 right-6"> bye bye </button>
+        <button onClick={() => {window.close()}} className="h-10 w-20 bg-black absolute bottom-6 right-6 rounded-3xl"> bye bye </button>
         </div>
       </div>
     </div>

@@ -13,7 +13,6 @@ import HamBurgerMenu from "./components/HamBurgerMenu";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
 
   useEffect(() => {
     const timer = setTimeout(() => {

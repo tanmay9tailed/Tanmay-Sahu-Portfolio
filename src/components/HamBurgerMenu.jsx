@@ -98,10 +98,10 @@ const HamBurgerMenu = () => {
         className="h-[70vh] w-full bg-[#b5b5b5ec] z-[99] fixed top-0 left-0 right-0 bottom-0 shadow-2xl rounded-b-2xl translate-y-[-100%]"
       >
         <div className="w-full h-full flex flex-col justify-center items-center text-6xl pt-6">
-          <div id="nav-tanmay">
+          <div id="nav-tanmay" className="flex items-center justify-center">
             <a
               href="/"
-              className="big-circle sm:text-7xl font-extrabold transition-all duration-500 font-rubikIso text-[#1d1d1dea] hover:text-blue-800"
+              className="big-circle sm:text-7xl font-extrabold transition-all duration-500 font-rubikIso text-center text-[#1d1d1dea] hover:text-blue-800"
             >
               TANMAY SAHU
             </a>

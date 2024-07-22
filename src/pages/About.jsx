@@ -65,14 +65,6 @@ const About = () => {
               <br />
               <br />
               <span>
-                My journey in web development has allowed me to blend my technical skills with an artistic touch.
-                Proficient in HTML, CSS, JavaScript, Java, and basic Data Structures and Algorithms (DSA), I also
-                possess practical experience with modern web technologies like Node.js, MongoDB, and React. One of my
-                notable projects is "Sociogram," a full-stack application featuring a Next.js frontend and a Node.js,
-                Express, and MongoDB backend, successfully deployed on Vercel.
-              </span>
-              <br /> <br />
-              <span>
                 I aspire to contribute my expertise to meaningful projects and am committed to making a significant
                 impact through technology. Join me on this exciting digital journey as we explore the limitless
                 possibilities of the web together.
