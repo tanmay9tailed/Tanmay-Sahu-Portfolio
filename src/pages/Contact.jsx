@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Contact = () => {
+const Contact = ({count}) => {
   const containerRef = useRef();
   const finalPageRef = useRef();
   const main = useRef();
@@ -109,7 +109,8 @@ const Contact = () => {
             <div>O</div>
             <div>U</div>
           </h1>
-        <button onClick={() => {window.close()}} className="h-10 w-20 bg-black absolute bottom-6 right-6 rounded-3xl"> bye bye </button>
+        <button onClick={() => {window.close()}} className="px-7 py-3 bg-black absolute bottom-6 right-6 rounded-3xl font-rajdhani font-bold text-2xl shadow"> Bye.... </button>
+        <h1 className="px-7 py-3 bg-black absolute bottom-6 left-6 rounded-3xl font-rajdhani font-bold text-2xl shadow">Site visites: {count}</h1>
         </div>
       </div>
     </div>
