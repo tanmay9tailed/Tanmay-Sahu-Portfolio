@@ -4,6 +4,7 @@ import mail from "../assets/mail.png";
 import linkedIn from "../assets/linked.png";
 import git from "../assets/git.png";
 import insta from "../assets/insta.png";
+import X from "../assets/x.jpeg";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -39,7 +40,10 @@ const About = () => {
   });
 
   return (
-    <div ref={container} className="min-h-screen w-full bg-black overflow-x-hidden sm:flex sm:justify-between px-8 sm:px-36">
+    <div
+      ref={container}
+      className="min-h-screen w-full bg-black overflow-x-hidden sm:flex sm:justify-between px-8 sm:px-36"
+    >
       <div className="w-full sm:w-3/5">
         <div>
           <h1 id="about" className="text-5xl sm:text-7xl font-rajdhani text-yellow-300 font-semibold ">
@@ -48,26 +52,32 @@ const About = () => {
           <div className="w-full pl-4 sm:px-16 pt-2 sm:pt-10">
             <p id="para" className="text-xs sm:text-xl">
               <span>
-                I'm Tanmay Sahu, a dedicated computer science student at ITER College with a passion for web
-                development. Hailing from a diverse background, I have a knack for crafting digital experiences that
-                merge creativity and functionality. As a fervent problem solver, I thrive on challenges and constantly
-                seek innovative solutions.
+                I'm Tanmay Sahu, a passionate B.Tech student at ITER College, specializing in full-stack development and
+                Web3 technologies. With a strong foundation in web development and blockchain, I aim to craft innovative
+                digital experiences that seamlessly blend creativity and cutting-edge functionality.
               </span>
               <br />
               <br />
               <span>
-                My journey in web development has allowed me to blend my technical skills with an artistic touch.
-                Proficient in HTML, CSS, JavaScript, Java, and basic Data Structures and Algorithms (DSA), I also
-                possess practical experience with modern web technologies like Node.js, MongoDB, and React. One of my
-                notable projects is "Sociogram," a full-stack application featuring a Next.js frontend and a Node.js,
-                Express, and MongoDB backend, successfully deployed on Vercel.
+                My journey spans from mastering traditional web technologies like HTML, CSS, JavaScript, and Java, to
+                modern frameworks such as Node.js, MongoDB, React, and Next.js. Recently, I've been delving into the
+                world of Web3, working on exciting projects like "TrezorX" — a crypto management web app that allows
+                users to create, manage, and import Solana and Ethereum wallets, with future plans to integrate
+                transaction functionality.
               </span>
               <br />
               <br />
               <span>
-                I aspire to contribute my expertise to meaningful projects and am committed to making a significant
-                impact through technology. Join me on this exciting digital journey as we explore the limitless
-                possibilities of the web together.
+                Along with my technical expertise, I constantly strive to solve real-world problems through innovative
+                solutions. My notable projects, such as "Sociogram" and contributions during my internship at Sarvin,
+                have shaped my growth as a full-stack developer, and I'm eager to make impactful contributions in the
+                rapidly evolving tech landscape.
+              </span>
+              <br />
+              <br />
+              <span>
+                I'm driven by curiosity and a passion for exploration, and I’m excited to be part of the future of
+                technology, whether it's through web development or the evolving space of blockchain.
               </span>
             </p>
           </div>
@@ -98,6 +108,9 @@ const About = () => {
             >
               <img src={insta} alt="" />
               INSTAGRAM
+            </a>
+            <a target="_blank" href="https://x.com/sahu069">
+              <img src={X} alt="" />X
             </a>
           </div>
         </div>

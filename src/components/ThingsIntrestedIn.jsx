@@ -14,6 +14,7 @@ import lightroom from "../assets/Lightroom.png";
 import ps from "../assets/ps-min.webp";
 import next from "../assets/next.svg";
 import figma from "../assets/figma.png";
+import web3 from "../assets/web-3-icon.png";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -112,6 +113,10 @@ const ThingsIntrestedIn = () => {
           <div className="image-container hover:scale-150 drop-shadow-xl shadow-black hover:z-50 transition">
             <img src={next} alt="" />
             <span className="hover-text scale-50 sm:scale-100">Next.js</span>
+          </div>
+          <div className="image-container hover:scale-150 drop-shadow-xl shadow-black hover:z-50 transition">
+            <img src={web3} alt="" />
+            <span className="hover-text scale-50 sm:scale-100">Web 3</span>
           </div>
         </div>
       </div>

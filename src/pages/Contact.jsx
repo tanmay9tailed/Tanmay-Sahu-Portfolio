@@ -73,11 +73,11 @@ const Contact = ({count}) => {
             or <br />
             <a
               target="_blank"
-              href="https://www.instagram.com/__tanmayy.sahu__/?utm_source=qr&igshid=OGU0MmVlOWVjOQ%3D%3D"
+              href="https://x.com/sahu069"
               className="contact-link"
               id="insta"
             >
-              Instagram
+              X
             </a>
             or
             <a
